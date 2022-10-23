@@ -15,6 +15,13 @@ export function titleChanged(id) {
 
 export function titleDeleted(id) {
     return {
+        type: actionTypes.titleDeleted,
+        payload: { id, title: `` },
+    };
+}
+
+export function taskDeleted(id) {
+    return {
         type: actionTypes.taskDeleted,
         payload: { id, title: `` },
     };
